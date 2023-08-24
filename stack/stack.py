@@ -1,7 +1,7 @@
 
 class Stack:
     def __init__(self,n):
-        self._items = []
+        self._items = [None]*n
         self._count = 0
         self._n = n
         
