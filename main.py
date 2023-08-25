@@ -1,4 +1,6 @@
 from link.slink import *
+from sort.quicksort import *
+from sort.linear_sort import *
 
 def find1(arr:list,n:int, key:str):
     if arr == None or n <= 0:
@@ -32,14 +34,7 @@ def find2(arr:list,n:int, key:str):
         return i
 
 if __name__ == "__main__":
-    s1 = SinggleLink(0)
-    s2 = SinggleLink(1)
-    s3 = SinggleLink(3)
-    s4 = SinggleLink(4)
-    s1.next = s2
-    s2.next = s3
-    s3.next = s4
-    showData(s1)
-    head = reserve(s1)
-    showData(head)
+   test = [2,2,5,5,1,1,0,0,7,9,2,10,4]
+   counting_sort(test)
+   print(test)
     
