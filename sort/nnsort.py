@@ -26,7 +26,8 @@ def insert_sort(a,n):
             else:
                 break
         a[j+1] = value
-        
+
+#与冒泡相反，每次找出未排序中的最小元素      
 def selection_sort(a,n):
     if n <= 1:
         return
