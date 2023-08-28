@@ -45,13 +45,12 @@ class BinarySearchTree:
         p = self.root #要删除的节点
         pp = None #记录p的父节点
         #查询删除节点位置
-        while p != None and p.data != data {
+        while p != None and p.data != data:
             pp = p
             if data > p.data:
                 p = p.right
             else:
                 p = p.left
-        }
         #没有找到
         if p == None:
             return 
