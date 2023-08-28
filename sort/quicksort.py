@@ -75,6 +75,7 @@ class QuickSort:
             if arr[j] < pivot:
                 arr[i],arr[j] = arr[j],arr[i]
                 i = i + 1
+        
         arr[i],arr[r] = arr[r],arr[i]
         return i
         
