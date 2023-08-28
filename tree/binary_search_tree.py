@@ -64,6 +64,7 @@ class BinarySearchTree:
                 min_pp = min_p
                 min_p = min_p.left
             }
+            #将删除节点的值，替换为其右子树中的最小值，将p指向右子树中最小值那个叶子节点
             p.data = min_p.data
             p = min_p
             pp = min_pp
