@@ -59,6 +59,7 @@ class BinarySearchTree:
         if p.left != None and p.right != None:
             min_p = p.right
             min_pp = p
+            #找到右子树中，最小节点
             while min_p.left != None {
                 min_pp = min_p
                 min_p = min_p.left

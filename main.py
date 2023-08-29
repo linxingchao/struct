@@ -1,6 +1,7 @@
 from link.slink import *
 from sort.quicksort import *
 from sort.linear_sort import *
+from graph import Graph
 
 def find1(arr:list,n:int, key:str):
     if arr == None or n <= 0:
@@ -34,7 +35,16 @@ def find2(arr:list,n:int, key:str):
         return i
 
 if __name__ == "__main__":
-   test = [2,2,5,5,1,1,0,0,7,9,2,10,4]
-   counting_sort(test)
-   print(test)
+   g = Graph(8)
+   g.add_edge(0,1)
+   g.add_edge(0,3)
+   g.add_edge(1,2)
+   g.add_edge(1,4)
+   g.add_edge(2,5)
+   g.add_edge(3,4)
+   g.add_edge(4,5)
+   g.add_edge(4,6)
+   g.add_edge(5,7)
+   g.add_edge(6,7)
+   g.bfs(0,5)
     
