@@ -45,13 +45,12 @@ class BinarySearchTree:
         p = self.root #要删除的节点
         pp = None #记录p的父节点
         #查询删除节点位置
-        while p != None and p.data != data {
+        while p != None and p.data != data:
             pp = p
             if data > p.data:
                 p = p.right
             else:
                 p = p.left
-        }
         #没有找到
         if p == None:
             return 
@@ -64,6 +63,7 @@ class BinarySearchTree:
                 min_pp = min_p
                 min_p = min_p.left
             }
+            #将删除节点的值，替换为其右子树中的最小值，将p指向右子树中最小值那个叶子节点
             p.data = min_p.data
             p = min_p
             pp = min_pp
