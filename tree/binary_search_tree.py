@@ -119,6 +119,7 @@ class BinarySearchTree:
             self.root = child
         elif pp.left == p:
             pp.left = child
-        else pp.right = child          
+        else:
+            pp.right = child          
                 
         
