@@ -48,6 +48,7 @@ class Graph:
     def _recurDfs(self,w,t,visted:list,prev:list):
         if self._found:
             return
+        visited[w] = True
         if w == t:
             self._found = True
             return
