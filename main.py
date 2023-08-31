@@ -2,6 +2,7 @@ from link.slink import *
 from sort.quicksort import *
 from sort.linear_sort import *
 from graph import Graph
+from reduce import *
 
 def find1(arr:list,n:int, key:str):
     if arr == None or n <= 0:
