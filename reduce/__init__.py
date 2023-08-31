@@ -2,6 +2,7 @@
 num = 0
 
 def count(a,n):
+    global num
     num = 0 
     merge_sort_counting(a,0,n-1)
     return num
@@ -15,6 +16,7 @@ def merge_sort_counting(a,p,r):
     merge(a,p,q,r)
  
 def merge(a:list,p,q,r):
+    global num
     i = p
     j = q+1
     k = 0
@@ -26,7 +28,7 @@ def merge(a:list,p,q,r):
             k=k+1
             i=i+1
         else:
-            num = num + (q-i+1)
+            num = num + 1 #统计（p-q）之前，比a[j]大的元素个数
             temp[k] = a[j]
             k=k+1
             j=j+1

@@ -4,6 +4,7 @@ from sort.linear_sort import *
 from graph import Graph
 from reduce import *
 from strings import *
+from recall import *
 
 def find1(arr:list,n:int, key:str):
     if arr == None or n <= 0:
@@ -49,9 +50,10 @@ if __name__ == "__main__":
 #    g.add_edge(5,7)
 #    g.add_edge(6,7)
 #    g.bfs(0,5)
-    a = ['a','b','d','a']
-    bc = [None]*256
-    generate_bc(a,4,bc)
-    print('ok')
+    # q = Queen()
+    # q.cal8queeens(0)
+    # print(q.count)
+    test = [[False]*10]*5
+    print(test)
     
     
