@@ -3,6 +3,7 @@ from sort.quicksort import *
 from sort.linear_sort import *
 from graph import Graph
 from reduce import *
+from strings import *
 
 def find1(arr:list,n:int, key:str):
     if arr == None or n <= 0:
@@ -36,16 +37,21 @@ def find2(arr:list,n:int, key:str):
         return i
 
 if __name__ == "__main__":
-   g = Graph(8)
-   g.add_edge(0,1)
-   g.add_edge(0,3)
-   g.add_edge(1,2)
-   g.add_edge(1,4)
-   g.add_edge(2,5)
-   g.add_edge(3,4)
-   g.add_edge(4,5)
-   g.add_edge(4,6)
-   g.add_edge(5,7)
-   g.add_edge(6,7)
-   g.bfs(0,5)
+#    g = Graph(8)
+#    g.add_edge(0,1)
+#    g.add_edge(0,3)
+#    g.add_edge(1,2)
+#    g.add_edge(1,4)
+#    g.add_edge(2,5)
+#    g.add_edge(3,4)
+#    g.add_edge(4,5)
+#    g.add_edge(4,6)
+#    g.add_edge(5,7)
+#    g.add_edge(6,7)
+#    g.bfs(0,5)
+    a = ['a','b','d','a']
+    bc = [None]*256
+    generate_bc(a,4,bc)
+    print('ok')
+    
     
