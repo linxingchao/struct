@@ -50,9 +50,9 @@ if __name__ == "__main__":
 #    g.add_edge(5,7)
 #    g.add_edge(6,7)
 #    g.bfs(0,5)
-    # q = Queen()
-    # q.cal8queeens(0)
-    # print(q.count)
+    q = Queen()
+    q.cal8queeens(0)
+    print(q.count)
     test = [[False]*10]*5
     print(test)
     
